@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Ali CV</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>Ali</span> Alayoubi</a>
+        <nav class="nav">
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <i id="btnmenu" class="fa-solid fa-bars"></i>
+    </header>
+    <main>
+           
+<!-- home -->
+    
+        <section id="home">
+            <div class="content">
+                <div class="text">
+                    <h2>Hello, I'm Ali <span class="alayoubi">Alayoubi</span><br><span class="alayoubi">Front</span> End developer</h2>
+                    <a href="#">Downlod My CV</a>
+                </div>
+                <img src="img/img2-removebg-preview.png" alt="">
+            </div>
+        </section>
+             
+<!-- about -->
+
+        <section id="about">
+            <h3><span>About</span>My</h3>
+            <div class="content">
+                <p>
+                    Hello Friend, my name is Ali,<br>
+                    I studied software engineering at the Islamic Sciences University <span>"WISE"</span> and I am currently studying,<br>
+                    I specialize in <span>Front End</span>,<br>
+                    Watch My <span>skills</span> to know which programming languages he is proficient in.
+                </p>
+                <img src="./img/Developer activity-bro.png" alt="">
+            </div>
+        </section>
+
+<!-- skills -->
+
+        <section id="skills">
+            <h3>My<span>skills</span></h3>
+            <div class="contentt">
+                <div class="content">
+                    <div class="images">
+                        <div class="top">
+                            <img src="./skills/web-development-html-responsive-web-design-logo-javascript-html-369e07c63cfe6edf10fc31d5cf9428f3.png" alt="">
+                            <img src="./skills/the-c-programming-language-computer-programming-programming-433eaff2e323c10c549cfa6b9d8237da.png" alt="">
+                            <img src="./skills/s0hhe3egmucqltu9ppqs46cs2o.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <img src="./skills/python-logo-clojure-javascript-9-af1dd70ea3def5fb0824ee7e80b5c558.png" alt="">
+                            <img src="./skills/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js-9035043883d01b0f5133f7dd586d0abd.png" alt="">
+                            <img src="./skills/java-runtime-environment-computer-icons-java-platform-standard-edition-java-42921b98669dba6c6a5ac0b7d81f4164.png" alt="">
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./skills/Code typing-bro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- contact -->
+
+        <section id="contact">
+            <h2> let's work togather </h2>
+            <div class="contant">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Email</h3>
+                        <a href="###">aalayoubi@gmail.com</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>+962796910779</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Social Media</h3>
+                        <div class="links">
+                            <a href="https://github.com/Ali-Alayoubi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/ali_alayoubii/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="####"><i class="fa-brands fa-linkedin" target="_blank"></i></a>   
+                            <a href="https://www.facebook.com/ali.alaiobe.96" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>Copyright &copy; all right reseved | made by <span> Ali Alayoubi</span> </p>
+    </footer>
+    <!-- JS -->
+    <script>
+        let btnmenu = document.getElementById("btnmenu");
+        let NavLinks = document.querySelector(".links");
+        
+        btnmenu.onclick =function (){
+            btnmenu.classList.toggle("fa-times")
+            NavLinks.classList.toggle("active")
+        }
+    </script>
+    
+    
+</body>
+</html>
