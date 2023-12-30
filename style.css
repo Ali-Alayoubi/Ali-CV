@@ -272,6 +272,8 @@ section {
     color: #ff274b;
 }
 
+
+
 /* footer */
 
 
@@ -285,7 +287,6 @@ section {
 /* responsiv */
 
 @media (max-width:1250px){
-    
     header{
         padding: 7px 50px;
     }
@@ -311,7 +312,16 @@ section {
         header {
             padding: 7px 25px; 
         }
+        #home,
+        #about,
+        #skills{
+            height: 80vh;
+        }
 
+
+        #about p{
+            margin-top: 50px;
+        }
         #home .content img {
             display: none;
         }
@@ -401,7 +411,6 @@ section {
                 }
 
                 @media (max-width:500px){
-
                     #footer p {
                         font-size: 0.8em;
                         
