@@ -52,6 +52,7 @@ header .links  a{
 }
 
 header .nav .links a:hover {
+    transition: all .5s;
     border-bottom : 1px solid #ff274b;
     color: #a8a8a8;
 }
@@ -90,24 +91,25 @@ section {
     margin-top: 10px;
 }
 
-
-
 .text a {
     color: #fff;
     letter-spacing: 1px;
     background-color: #ff274b;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 600;
     display: inline-block;
     padding: 0.9375em 2.1875em;
     border-radius: 15px;
     transition: 0.7 ease;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .text a:hover {
+    transition: all 1.5s;
+    box-shadow: 0 0 15px #ff274b, 15px 15px 20px #ff274b;
     background-color: #171a1c;
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-3deg);
+    
 }
 
 /* about */
@@ -146,6 +148,26 @@ section {
 
 #about .content img {
     width: 200px;
+    animation-name: img-about;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes img-about {
+    0%{
+        translate: 0px 50px ;
+    }
+    25%{
+        translate: 0 -50px;
+    }
+    50%{
+        translate: 0px 50px ;
+    }
+    75%{
+        translate: 0 -50px; 
+    }
+    100%{
+        translate: 0px 50px ;
+    }
 }
 
 /* skills */
@@ -195,11 +217,10 @@ section {
     opacity: 0.7;
 }
 
-#skills .top img:hover{
-    opacity: 1;
-}
+#skills .top img:hover,
 #skills .bottom img:hover {
     opacity: 1;
+    box-shadow: 0 0 20px #fff;
 }
 
 #skills.img {
@@ -209,6 +230,27 @@ section {
 #skills .img img {
     width: 300px;
     margin-left: 500px;
+    animation-name: img-skills;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img-skills {
+    0%{
+        translate: 50px 0;
+    }
+    25%{
+        translate: -50px 0;
+    }
+    50%{
+        translate: 50px 0;
+    }
+    75%{
+        translate: -50px 0; 
+    }
+    100%{
+        translate: 50px 0;
+    }
 }
 
 /* contact */
@@ -250,11 +292,12 @@ section {
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
-    transition: 0.7 ease;
+    transition: 1.5s all;
 }
 
 .card:hover {
    transform: scale(1.1); 
+   box-shadow: 0 0 20px #ff274b, 0 0 20px #ff274b;
 }
 
 .info h3 {
@@ -270,6 +313,7 @@ section {
 
 #contact a:hover{
     color: #ff274b;
+    transition: all .5s;
 }
 
 
@@ -282,6 +326,8 @@ section {
     color: #fff;
     width: 100%;
     padding-left: 2px;
+    display: flex;
+    justify-content: center;
 }
 
 /* responsiv */
